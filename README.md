@@ -289,7 +289,7 @@ This project is licensed under the MIT License.
 - **FastAPI**: For the excellent web framework
 - **Transformers**: HuggingFace transformers library
 
-##  Contact
+
 
 For questions or issues, please open a GitHub issue or contact [your-email].
 
