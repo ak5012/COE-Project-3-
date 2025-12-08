@@ -2,7 +2,7 @@
 
 A production-ready machine learning pipeline that chains image captioning and sentiment analysis models, deployed as a containerized REST API.
 
-## 📋 Overview
+##  Overview
 
 This project implements a **multi-model inference pipeline** where:
 1. **Model 1** (Image Captioning): Converts input images into descriptive text captions using BLIP
@@ -10,14 +10,14 @@ This project implements a **multi-model inference pipeline** where:
 3. **Unified API**: Both models are served through a single FastAPI endpoint
 
 ### Key Features
-- ✅ RESTful API with automatic documentation
-- ✅ Docker containerization for easy deployment
-- ✅ GPU support (optional)
-- ✅ Comprehensive evaluation metrics
-- ✅ Production-ready error handling
-- ✅ Health check endpoints
+-  RESTful API with automatic documentation
+-  Docker containerization for easy deployment
+-  GPU support (optional)
+-  Comprehensive evaluation metrics
+-  Production-ready error handling
+-  Health check endpoints
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -53,7 +53,7 @@ This project implements a **multi-model inference pipeline** where:
         └───────────────────────────────┘
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.10+
@@ -95,7 +95,7 @@ docker build -t image-sentiment-pipeline .
 docker run -p 8000:8000 image-sentiment-pipeline
 ```
 
-## 📡 API Usage
+##  API Usage
 
 ### Health Check
 ```bash
@@ -144,7 +144,7 @@ print(f"Sentiment: {result['sentiment']} ({result['sentiment_confidence']:.2%})"
 Visit `http://localhost:8000/docs` for Swagger UI documentation
 Visit `http://localhost:8000/redoc` for ReDoc documentation
 
-## 🧪 Evaluation
+##  Evaluation
 
 Run comprehensive model evaluation:
 
@@ -159,7 +159,7 @@ This will generate:
 - End-to-end latency metrics
 - Results saved to `evaluation/results.json`
 
-## 📊 Project Structure
+##  Project Structure
 
 ```
 image-sentiment-pipeline/
@@ -179,7 +179,7 @@ image-sentiment-pipeline/
 └── README.md                  # This file
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### Model Selection
 
@@ -212,7 +212,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 
 2. The code automatically detects and uses GPU if available
 
-## 📈 Performance Benchmarks
+##  Performance Benchmarks
 
 Typical performance on CPU (Intel i7):
 - Image Captioning: ~400-600ms per image
@@ -224,7 +224,7 @@ With GPU (NVIDIA RTX 3080):
 - Sentiment Analysis: ~20-30ms per caption
 - **Total End-to-End Latency: ~120-180ms**
 
-## 🧩 Use Cases
+##  Use Cases
 
 1. **Social Media Monitoring**: Analyze image posts and determine sentiment
 2. **Content Moderation**: Automatically flag images with negative sentiment
@@ -232,7 +232,7 @@ With GPU (NVIDIA RTX 3080):
 4. **Accessibility**: Generate captions for images with sentiment context
 5. **Research**: Study the relationship between visual content and text sentiment
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Models not loading
 - Ensure you have sufficient RAM (4GB+ required)
@@ -248,7 +248,7 @@ With GPU (NVIDIA RTX 3080):
 - Ensure Docker has sufficient memory allocated (4GB+)
 - Check logs: `docker-compose logs -f`
 
-## 📝 Example Outputs
+##  Example Outputs
 
 **Input Image**: Beach sunset with people
 ```json
@@ -268,7 +268,7 @@ With GPU (NVIDIA RTX 3080):
 }
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Areas for improvement:
 - Add more model options
@@ -277,18 +277,18 @@ Contributions are welcome! Areas for improvement:
 - Improve error handling
 - Add more evaluation metrics
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **BLIP**: Salesforce Research for the image captioning model
 - **DistilBERT**: HuggingFace for the sentiment analysis model
 - **FastAPI**: For the excellent web framework
 - **Transformers**: HuggingFace transformers library
 
-## 📧 Contact
+##  Contact
 
 For questions or issues, please open a GitHub issue or contact [your-email].
 
