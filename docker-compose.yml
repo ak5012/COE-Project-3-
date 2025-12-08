@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # Main inference server
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: image-sentiment-api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TRANSFORMERS_CACHE=/app/model_cache
+    volumes:
+      - model_cache:/app/model_cache
+      - ./src:/app/src  # Mount source for development
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 4G
+        reservations:
+          cpus: '1.0'
+          memory: 2G
+
+volumes:
+  model_cache:
+    driver: local
+
+networks:
+  default:
+    name: image-sentiment-network
