@@ -1,4 +1,5 @@
 # Image-to-Sentiment Pipeline: Multi-Model Inference Server
+COE 379L, By: Akshay Karthik
 
 A production-ready machine learning pipeline that chains image captioning and sentiment analysis models, deployed as a containerized REST API.
 
