@@ -278,9 +278,6 @@ Contributions are welcome! Areas for improvement:
 - Improve error handling
 - Add more evaluation metrics
 
-##  License
-
-This project is licensed under the MIT License.
 
 ##  Acknowledgments
 
@@ -291,8 +288,3 @@ This project is licensed under the MIT License.
 
 
 
-For questions or issues, please open a GitHub issue or contact [your-email].
-
----
-
-**Note**: This is a student project for educational purposes. Models are pre-trained and not fine-tuned for specific domains.
