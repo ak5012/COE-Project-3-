@@ -4,7 +4,7 @@ By: Akshay Karthik   COE 379L
 A production-ready machine learning pipeline that chains image captioning and sentiment analysis models, deployed as a containerized REST API.
 
 ##  Project Video
-The video for this project can be found here:
+The video for this project can be found here: https://drive.google.com/file/d/1aehdB5hlrcKaOdm31QIj8PmDwBURBJI5/view?usp=drive_link
 
 ##  Overview
 
